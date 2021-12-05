@@ -21,7 +21,10 @@
 
         `sudo cp -r [JULIA_FORDER] /opt/`
 
-    * Create a symbolic link to `julia``inside the `/usr/local/bin/` folder:
+    * Add bin Julia folder to `PATH` environment variable:
+         `echo "export PATH="$PATH:/opt/[JULIA_FOLDER]/bin"" >> ~/.bashrc && source ~/.bashrc`
+
+    * Other option for the last step is create a symbolic link to `julia` inside the `/usr/local/bin/` folder:
 
         `sudo ln -s /opt/[JULIA_FOLDER]/bin/julia /usr/local/bin/julia`
 
@@ -86,6 +89,12 @@ We will use Visual Studio Code with an extension of Julia (https://www.julia-vsc
     >
     >VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=julialang.language-julia
 
+
+**Oficial Getting Started page for Julia**:
+    
+https://docs.julialang.org/en/v1/manual/getting-started/
+
+You can take a look: https://www.coursera.org/learn/julia-programming?ranMID=40328&ranEAID=0F1O0otUXQc&ranSiteID=0F1O0otUXQc-vHxRcmGOYPgjO.yOzyGnOg&siteID=0F1O0otUXQc-vHxRcmGOYPgjO.yOzyGnOg&utm_content=10&utm_medium=partners&utm_source=linkshare&utm_campaign=0F1O0otUXQc 
 
 
 
